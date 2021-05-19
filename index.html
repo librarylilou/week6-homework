@@ -6,14 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Weather Dashboard</title>
 </head>
 
 <body>
+    <header class="container-fluid bg-info text-center">
+        <h1>Weather Dashboard</h1>
+      </header>
+
+      <div class="container-fluid">
+        <div class="row">
+          <aside class="col-lg-3 bg-info">
+            <h5 class="mt-1">Search for a City:</h5>
+            <div class="form-inline form-group">
+              <input class="form-control" type="text" id="searchValue" />
+              <button class="btn btn-secondary" id="searchButton"> <i class="fa fa-search"></i> </button>
+            </div>
     
-    <script src="script.js"></script>
+            <ul class="list-group history"></ul>
+          </aside>
+    
+          <div class="col-lg-9">
+            <div id="today" class="mt-3"></div>
+            <div id="forecast" class="row mt-3"></div>
+          </div>
+        </div>
+      </div>
+    
+    <script src="./assets/script.js"></script>
 </body>
 
 </html>
